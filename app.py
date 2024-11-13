@@ -75,7 +75,7 @@ TRANSLATION_MODELS = {
     
 }
 
-HF_API_KEY = os.getenv("HF_API_KEY", "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")
+HF_API_KEY = os.getenv("HF_API_KEY", "Your_API_Key")
 
 headers = {
     "Authorization": f"Bearer {HF_API_KEY}",
