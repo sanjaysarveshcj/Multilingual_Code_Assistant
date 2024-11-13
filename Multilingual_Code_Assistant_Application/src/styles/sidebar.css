@@ -1,0 +1,101 @@
+/* Sidebar base styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden off the screen */
+  width: 250px;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: 0.3s ease; /* Smooth slide-in/out effect */
+  z-index: 1000; /* Ensure it appears above other content */
+  padding-top: 60px;
+}
+
+.sidebar.open {
+  left: 0; /* When open, the sidebar is visible */
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+.close-icon {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.5em;
+}
+
+.sidebar-links {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar-links li {
+  margin: 20px 12px;
+}
+
+.sidebar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.2em;
+  padding: 10px;
+  display: block;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-links a:hover {
+  background-color: #00ffcc;
+  color: #0d0d0d;
+}
+
+/* Sidebar Overlay */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Dark transparent background */
+  z-index: 999; /* Ensures it's under the sidebar */
+  display: none; /* Initially hidden */
+}
+
+.sidebar.open ~ .sidebar-overlay {
+  display: block; /* Show overlay when sidebar is open */
+}
+
+/* Media Query for Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Make sidebar narrower for small screens */
+  }
+
+  .sidebar-links a {
+    font-size: 1em; /* Smaller font size for small screens */
+  }
+}
+
+.login-btn, .logout-btn {
+  background-color: #00ffcc;
+  border: none;
+  padding: 10px;
+  color: #1a1a1a;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.login-btn:hover, .logout-btn:hover {
+  background-color: #00cc99;
+}
+
+.sidebar-links .login-btn{
+  margin: 10px 20px;
+}
+
+.sidebar-links .logout-btn{
+  margin: 10px 20px;
+}

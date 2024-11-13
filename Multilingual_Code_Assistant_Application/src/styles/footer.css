@@ -1,0 +1,13 @@
+footer {
+  background-color: #1a1a1a;
+  padding: 10px;
+  text-align: center;
+  color: #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}

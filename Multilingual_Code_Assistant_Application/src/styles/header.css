@@ -1,0 +1,21 @@
+header {
+    background-color: #0d0d0d;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffcc;
+  }
+
+  .navbar-logo img {
+    height: 50px; /* Adjust as needed */
+    width: auto;
+    padding-right: 20px ;
+  }
+  
+  header h1 {
+    color: #00ffcc;
+    font-size: 2.5em;
+    margin: 0;
+  }
+  
